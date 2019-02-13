@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>API tester</title>
+</head>
+<body>
+  <button onclick="sendHello()">Send "Hello"</button>
+  <button onclick="sendGoodbye()">Send "Goodbye"</button>
+  <input id="link-input" placeholder="https://youtube.com" />
+  <button onclick="sendLink(document.getElementById('link-input').value)">Send link to the video</button>
+  <textarea id="event-log" cols="100" rows="10"></textarea>
+
+  <script src="/general.js"></script>
+</body>
+</html>
