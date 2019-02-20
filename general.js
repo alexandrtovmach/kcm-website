@@ -16,12 +16,12 @@ function listener(event) {
   log("To website", event.data);
 }
 
-function sendHello() {
-  sendEventToContainer("Hello!");
+function sendAudio() {
+  sendEventToContainer({link: 'http://kcm.fm/livemusic', type: 'audio'});
 }
 
-function sendGoodbye() {
-  sendEventToContainer("Goodbye!");
+function sendVideo() {
+  sendEventToContainer({link: 'http://techslides.com/demos/sample-videos/small.mp4', type: 'video'});
 }
 
 function sendLink(data) {
