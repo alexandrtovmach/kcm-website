@@ -19,7 +19,7 @@ function sendAudio() {
 
 function sendVideo() {
   sendEventToContainer({
-    source: "http://techslides.com/demos/sample-videos/small.mp4",
+    source: "https://www.quirksmode.org/html5/videos/big_buck_bunny.mp4",
     type: "video"
   });
 }
