@@ -5,8 +5,13 @@ function listener(event) {
 };
 
 function sendEventToContainer(data) {
-  appContainerRef.postMessage(data, "*");
-  log("From website", data);
+  try {
+    const json = JSON.stringify(data);
+    appContainerRef.postMessage(json, "*");
+    log("From website", data);
+  } catch (err) {
+    console.error(err);
+  }
 };
 
 function sendAudio() {
