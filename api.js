@@ -17,8 +17,27 @@ function sendEventToContainer(data) {
 function sendAudio() {
   sendEventToContainer({
     source: "http://kcm.fm/livemusic",
-    artwork: "http://kcm.fm/static/images/logo.svg",
+    artwork: "http://kcm.fm/upload/pictures/0/185.jpg",
+    artworkLarge: "http://kcm.fm/upload/pictures/0/185.jpg",
     type: "audio",
+  });
+}
+
+function sendBrokenAudio() {
+  sendEventToContainer({
+    source: "",
+    artwork: "",
+    artworkLarge: "",
+    type: "audio",
+  });
+}
+
+function sendBrokenType() {
+  sendEventToContainer({
+    source: "http://kcm.fm/livemusic",
+    artwork: "http://kcm.fm/upload/pictures/0/185.jpg",
+    artworkLarge: "http://kcm.fm/upload/pictures/0/185.jpg",
+    type: "custom",
   });
 }
 
